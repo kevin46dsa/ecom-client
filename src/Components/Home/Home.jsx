@@ -1,18 +1,23 @@
 import React from 'react';
 import Placeorderfinal from '../../Service/Placeorderfinal';
-
+import PaypalCheckout from '../Paypal/PaypalCheckOut';
 
 function Home() {
 
 	let order = [
 		{
-			id: 1,
-			quantity:2,
-			sku:"123456"
+			Quantity:2,
+			Sku:"123456",
+			Name:"Jordan 12 Mids",
+			Description: "Limited Edition Jordan 12 Mids Black Color",
+			Price: "199.00"
+			
 		},{
-			id: 1,
-			quantity:2,
-			sku:"123456"
+			Quantity:1,
+			Sku:"123456",
+			Name:"Jordan 12 Mids",
+			Description: "Limited Edition Jordan 12 Mids White Color",
+			Price: "299.00"
 		}
 	]
 
@@ -37,6 +42,7 @@ function Home() {
 		<div>
             <h1>Hello</h1>
 			<button onClick={placeOrderFinal}>Place Order</button>
+			<PaypalCheckout cart={order}/>
         </div>
 	);
 }
