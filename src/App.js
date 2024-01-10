@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import Routesr from "./routes/Routes";
+import ResponsiveAppBar from './Components/Navbar/Navbar';
 //import Header from './Components/Header/Header';
 
 // import Logo from './Components/css/logo.png'
@@ -14,7 +15,8 @@ function App() {
 	return (
 		<BrowserRouter>
 			{/*<Header /><br />*/}
-			
+			<ResponsiveAppBar/>
+
 			<Routesr />
 		</BrowserRouter>
 	);

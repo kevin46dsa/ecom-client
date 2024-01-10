@@ -3,6 +3,7 @@ import { Routes as Switch, Route as Routing, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import Home from '../Components/Home/Home';
+import Shop from '../Components/Shop/Shop';
 /*
 import Login from '../Components/login/login';
 import Signup from '../Components/Signup/Signup';
@@ -30,6 +31,7 @@ const Routesr = () => {
 			<Switch>
 				
 					<Routing exact path="/" element={<Home />} />
+					<Routing exact path="/shop" element={<Shop />} />
 					{/*
 					<Routing exact path="/paymentcancled" element={<Home />} />
 					<Routing exact path="/paymentaccepted" element={<Home />} />
